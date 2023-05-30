@@ -1,0 +1,56 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+{% load static %} 
+
+<div class="container mb-3 pt-5">
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-10">
+      <div>
+        <h1>Historial ventas</h1>
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <td> numero de ventas </td>
+              <td> numero de la factura </td>
+              <td> estado factura </td>
+              <td> persona id </td>
+              <td> producto id </td>
+              <td> fecha </td>
+            </tr>
+          </thead>
+          <tbody>
+            {% for ventas in ventass %}
+            <tr>
+              <td>
+                {{ ventas.numero_ventas }}
+              </td>
+              <td>
+                {{  ventas.numero_de_factura }}
+              </td>
+              <td>
+                {{  ventas.estado_factura }}
+              </td>
+              <td>
+                {{ ventas.persona_id }}
+              </td>
+              <td>
+                {{ ventas.producto1_id }}
+              </td>
+              <td>
+                {{ ventas.fecha }}
+              </td>
+              <td>
+                <div class="d-flex p-2">
+                  <a class="btn btn-warning" style="margin-right: 5px;" href="{% url 'projects.edit' Persona.codigo %}">Edit</a>
+                  <a class="btn btn-danger" href="">delete</a>
+                </div>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

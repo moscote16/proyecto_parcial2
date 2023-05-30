@@ -1,0 +1,80 @@
+/*promocionar*/
+body{
+   justify-content: center;
+   align-items: center;
+   text-align: center;   
+   background-color: rgb(16, 83, 16);
+   color: rgb(245, 237, 237)
+   
+}
+div{
+   margin-top: auto;
+   padding-top: -10px;
+
+}
+#color{
+   margin-top: auto;
+   padding-top: 8px;
+   color: blue;
+   background-color: rgb(16, 83, 16);
+}
+nav{   
+   color: blue;
+   background-color: rgb(16, 83, 16);
+   
+}
+.form-control{
+   
+   width: 300px;
+}
+.container{
+  
+   display: grid;
+   place-content: center;
+}
+.logos{
+   background-color: rgb(241, 234, 234);
+}
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+.card{
+   width: 100%;
+   margin:20px;
+   border-radius: 6px;
+   overflow: hidden;
+   background:#266601 ;
+   box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+   cursor:default;
+   transition: all 400ms ease;
+}
+.card:hover{
+   box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+   transform: translateY(-3%);
+}
+.card .contenido{
+   padding: 15px;
+   text-align: center;
+}
+.card .contenido h1{
+   font-weight: 400;
+   margin-bottom: 15px;
+}
+.card .contenido a{
+   text-decoration: none;
+   display: inline-block;
+   padding: 10px;
+   margin-top: 10px;
+   color: #2f39cc;
+   border: 1px solid #2f39cc;
+   border-radius: 4px;
+   transition: all 400ms ease;
+}
+.card .contenido a:hover{
+   background: #2f39cc;
+   color: #fff;
+}
